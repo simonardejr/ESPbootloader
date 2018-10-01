@@ -32,9 +32,9 @@ wifi.sta.getap(function(t)
             ap = trim(ap)
             available_aps = available_aps .. "<option value='".. ap .."'>".. ap .."</option>"
             count = count+1
-            if (count>=10) then break end
+            if (count >= 15) then break end
         end 
-        available_aps = available_aps .. "<option value='-1'>---hidden SSID---</option>"
+        available_aps = available_aps .. "<option value='-1'>--- hidden SSID ---</option>"
         setup_server()
     end
 end)
